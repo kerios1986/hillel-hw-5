@@ -2,5 +2,24 @@
     "name": "admin/hillel",
     "type": "library",
     "license": "BSD",
-    "require": {}
+    "require": {
+        "symfony/var-dumper": "^5.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "App/",
+            "Inheritance\\": "Inheritance/",
+            "Interface\\": "Interface/",
+            "Autoload\\": "Autoload/",
+            "GetSet\\": "GetSet/",
+            "Namespace\\": "Namespace/"
+
+        },
+        "files": [
+            "functions/config.php"
+        ],
+        "classmap": [
+            "functions"
+        ]
+    }
 }
